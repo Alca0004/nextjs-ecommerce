@@ -13,8 +13,8 @@ model Product {
   imageUrl    String
   name        String
   price       Int
-  createdAt   DateTime   @default(now())
-  updatedAt   DateTime   @updatedAt
+  createdAt   DateTime?  @default(now())
+  updatedAt   DateTime?  @updatedAt
   CartItem    CartItem[]
 
   @@map("products")
